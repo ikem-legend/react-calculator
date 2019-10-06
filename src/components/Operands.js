@@ -22,13 +22,15 @@ class Operands extends Component {
   }
 
 	render() {
+    const { bg, fc } = this.props
     return (
       <Fragment>
         <div 
           style={{
             padding: "5px",
-            backgroundColor: "#e5e5e5",
-            border: "1px solid black"
+            backgroundColor: bg ? "#f0f0f0" : "#666",
+            border: "1px solid black",
+            color: fc ? "#000" : "#fff"
           }}
           className="col-md-12"
           onClick={this.add}
@@ -38,8 +40,9 @@ class Operands extends Component {
         <div 
           style={{
             padding: "5px",
-            backgroundColor: "#e5e5e5",
-            border: "1px solid black"
+            backgroundColor: bg ? "#f0f0f0" : "#666",
+            border: "1px solid black",
+            color: fc ? "#000" : "#fff"
           }}
           className="col-md-12"
           onClick={this.subtract}
@@ -49,8 +52,9 @@ class Operands extends Component {
         <div 
           style={{
             padding: "5px",
-            backgroundColor: "#e5e5e5",
-            border: "1px solid black"
+            backgroundColor: bg ? "#f0f0f0" : "#666",
+            border: "1px solid black",
+            color: fc ? "#000" : "#fff"
           }}
           className="col-md-12"
           onClick={this.multiply}
@@ -60,8 +64,9 @@ class Operands extends Component {
         <div 
           style={{
             padding: "5px",
-            backgroundColor: "#e5e5e5",
-            border: "1px solid black"
+            backgroundColor: bg ? "#f0f0f0" : "#666",
+            border: "1px solid black",
+            color: fc ? "#000" : "#fff"
           }}
           className="col-md-12"
           onClick={this.divide}

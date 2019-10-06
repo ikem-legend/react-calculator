@@ -7,7 +7,7 @@ class Numbers extends Component {
 	}
 
 	render() {
-		const { number } = this.props
+		const { number, bg, fc } = this.props
 		return (
 			<Fragment>
 				<div 
@@ -15,11 +15,10 @@ class Numbers extends Component {
 						// display: "flex",
 						// flexDirection: "row",
 						// justifyContent: "center",
-						// minWidth: "30px",
-						// width: "130px",
 						padding: "5px",
-						backgroundColor: "#e5e5e5",
-						border: "1px solid black"
+						backgroundColor: bg ? "#f0f0f0" : "#666",
+						border: "1px solid black",
+						color: fc ? "#000" : "#fff",
 					}}
 					className="col-md-4"
           onClick={this.useNumber}

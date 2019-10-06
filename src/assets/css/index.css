@@ -15,3 +15,11 @@ code {
 p {
 	margin-top: 10px;
 }
+
+.white-bg {
+	background-color: #fff;
+}
+
+.dark-bg {
+	background-color: #000;
+}
